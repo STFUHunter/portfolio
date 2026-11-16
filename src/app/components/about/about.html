@@ -1,0 +1,29 @@
+<section id="about" class="about-section">
+  <h2> À propos de moi</h2>
+  <p class="summary">{{ summary }}</p>
+
+  <div class="about-grid">
+    <div class="education-box">
+      <h3>Education</h3>
+      <p class="degree">{{ education.degree }}</p>
+      <p class="school">{{ education.institution }} • {{ education.year }}</p>
+    </div>
+
+    <div class="skills-box">
+      <h3>Technical Skills</h3>
+      
+      <div class="categories-container">
+        @for (group of skillCategories; track group.category) {
+          <div class="skill-group">
+            <h4 class="category-title">{{ group.category }}</h4>
+            <ul class="skills-list">
+              @for (skill of group.items; track skill) {
+                <li class="skill-badge">{{ skill }}</li>
+              }
+            </ul>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>

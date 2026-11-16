@@ -1,0 +1,10 @@
+<section id="projects" class="projects-section">
+  <h2>Projets</h2>
+  <p class="section-subtitle">Tous mes projets</p>
+
+  <div class="projects-grid">
+    @for (item of projects; track item.title) {
+      <app-project-card [project]="item"></app-project-card>
+    }
+  </div>
+</section>

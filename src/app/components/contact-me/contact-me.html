@@ -1,0 +1,20 @@
+<footer id="contact" class="contact-section">
+  <h2>Contactez-moi!</h2>
+  <p class="contact-intro">
+    Copier mon email ou télécharger mon cv.
+  </p>
+
+  <div class="contact-actions">
+    <button type="button" (click)="copyEmail()" class="btn-copy">
+      @if (copied()) {
+        ✓ Copied {{ email }}
+      } @else {
+        Copier mon email: {{ email }}
+      }
+    </button>
+
+    <a href="/cv.pdf" download="Oussema_Oueslati_CV.pdf" class="btn-copy">
+      ↓ Télécharger mon cv
+    </a>
+  </div>
+</footer>

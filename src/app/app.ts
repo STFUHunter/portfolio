@@ -1,9 +1,22 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { About } from './components/about/about';
+import { Experience } from './components/experience/experience';
+import { ContactMe } from './components/contact-me/contact-me';
+import { Projects } from './components/projects/projects';
+import { Dock } from './components/dock/dock';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [
+    Header,
+    About,
+    Experience,
+    ContactMe,
+    Projects,
+    Dock
+],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

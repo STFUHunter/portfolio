@@ -1,0 +1,111 @@
+.experience-section {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.75rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem 0;
+  color: #ffffff;
+}
+
+.section-subtitle {
+  color: #9ca3af;
+  margin: 0 0 2rem 0;
+}
+
+/* Uses a responsive grid just like ProjectsComponent */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Matches ProjectCardComponent styling identically */
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 1.5rem;
+  background-color: rgba(24, 24, 27, 0.72);
+  backdrop-filter: blur(8px);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(139, 92, 246, 0.45);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.18rem;
+  color: #ffffff;
+}
+
+.period {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.company {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: #a78bfa;
+}
+
+.highlights {
+  margin: 0 0 1.25rem 0;
+  padding-left: 1.15rem;
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 0.94rem;
+}
+
+.highlights li {
+  margin-bottom: 0.45rem;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+  padding: 0;
+  margin: auto 0 0 0;
+}
+
+.tech-tag {
+  background-color: rgba(255, 255, 255, 0.06);
+  color: #d4d4d8;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 500;
+}

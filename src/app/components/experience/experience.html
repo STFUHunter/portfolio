@@ -1,0 +1,34 @@
+<section id="experience" class="experience-section">
+  <h2>EXPÉRIENCES PROFESSIONNELLES (STAGES)</h2>
+  <p class="section-subtitle">Tous mes stages</p>
+
+  <div class="experience-grid">
+    @for (exp of experiences; track exp.company + exp.period) {
+      <article class="card">
+        <div class="card-top">
+          <div class="card-header">
+            <div class="title-row">
+              <h3>{{ exp.role }}</h3>
+              <span class="period">{{ exp.period }}</span>
+            </div>
+            <span class="company">
+              {{ exp.company }}
+            </span>
+          </div>
+
+          <ul class="highlights">
+            @for (point of exp.highlights; track point) {
+              <li>{{ point }}</li>
+            }
+          </ul>
+        </div>
+
+        <ul class="tech-list">
+          @for (tech of exp.technologies; track tech) {
+            <li class="tech-tag">{{ tech }}</li>
+          }
+        </ul>
+      </article>
+    }
+  </div>
+</section>

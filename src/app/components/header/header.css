@@ -1,0 +1,84 @@
+.portfolio-header {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #9ca3af;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #a78bfa;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding: 3rem 0;
+}
+
+.profile-img {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(139, 92, 246, 0.6);
+  box-shadow: 0 0 45px rgba(139, 92, 246, 0.45);
+  flex-shrink: 0;
+}
+
+.hero-text h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.4rem;
+  color: #ffffff;
+}
+
+.hero-text h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+  color: #a78bfa;
+  font-weight: 500;
+}
+
+.hero-text p {
+  margin: 0;
+  color: #9ca3af;
+  line-height: 1.65;
+  max-width: 600px;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}

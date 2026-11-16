@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://googleapis.com');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0 0 6rem 0; /* Extra bottom padding so the floating dock never covers your footer */
+  background-color: #09090b;
+  color: #f4f4f5;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  
+  /* Subtle starfield created purely with CSS radial gradients */
+  background-image: 
+    radial-gradient(1.5px 1.5px at 40px 60px, rgba(255, 255, 255, 0.45), transparent),
+    radial-gradient(1px 1px at 150px 220px, rgba(255, 255, 255, 0.3), transparent),
+    radial-gradient(1.5px 1.5px at 280px 90px, rgba(167, 139, 250, 0.5), transparent),
+    radial-gradient(1px 1px at 420px 310px, rgba(255, 255, 255, 0.35), transparent),
+    radial-gradient(1.5px 1.5px at 560px 140px, rgba(255, 255, 255, 0.4), transparent),
+    radial-gradient(1px 1px at 700px 260px, rgba(139, 92, 246, 0.4), transparent);
+  background-size: 750px 400px;
+}
+
+/* Global dark-mode overrides for your existing sections */
+h1, h2, h3, h4 {
+  color: #ffffff !important;
+}
+
+p, .summary, .section-subtitle, .description, .highlights {
+  color: #9ca3af !important;
+}
+
+section, header {
+  border-bottom-color: rgba(255, 255, 255, 0.08) !important;
+}
