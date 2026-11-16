@@ -27,4 +27,12 @@ export class ContactMe {
       this.copied.set(false);
     }, 2500);
   }
+  downloadCv() {
+  const link = document.createElement('a');
+  link.href = '/cv.pdf'; 
+  link.download = 'Oussema_Oueslati_CV.pdf';
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
 }

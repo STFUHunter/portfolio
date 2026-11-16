@@ -16,10 +16,10 @@ h2 {
   margin: 0 0 2rem 0;
 }
 
-/* Uses a responsive grid just like ProjectsComponent */
+/* Modifié pour une seule colonne (1 expérience par ligne) */
 .experience-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -108,4 +108,17 @@ h3 {
   border-radius: 6px;
   font-size: 0.78rem;
   font-weight: 500;
+}
+
+/* Sécurité responsive pour empiler la date et le titre sur mobile */
+@media (max-width: 640px) {
+  .title-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .period {
+    white-space: normal;
+  }
 }

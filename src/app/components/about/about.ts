@@ -23,17 +23,17 @@ export class About {
   skillCategories: SkillCategory[] = [
     {
       category: 'Langages & Frameworks',
-      items: ['Python', 'FastAPI', 'Flask', 'Angular']
+      items: ['Python', 'FastAPI', 'Flask', 'Angular', 'N8N']
     },
 
     {
       category: 'IA & NLP',
-      items: ['PyTorch', 'Hugging Face (Qwen)', 'LangChain', 'LangGraph', 'OCR', 'CUDA']
+      items: ['PyTorch', 'Hugging Face (Qwen)', 'LangChain', 'LangGraph', 'OCR', 'CUDA', 'Ollama', 'OpenAI-whisper']
     },
 
     {
       category: 'Base de données et stockage',
-      items: ['PostgreSQL', 'MinIO', 'Redis']
+      items: ['PostgreSQL', 'MinIO', 'Redis', 'Chroma DB']
     },
 
     {

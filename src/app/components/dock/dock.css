@@ -83,3 +83,29 @@
   opacity: 1;
   transform: translateY(-2px);
 }
+
+@media (max-width: 640px) {
+  .floating-dock {
+    bottom: 1rem;
+    padding: 0.45rem 0.65rem;
+    gap: 0.3rem;
+    max-width: calc(100vw - 2rem);
+  }
+
+  .dock-item {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Désactive le zoom et les tooltips au toucher sur mobile */
+  .dock-item:hover,
+  .dock-item:has(+ .dock-item:hover),
+  .dock-item:hover + .dock-item {
+    transform: none;
+    margin: 0;
+  }
+
+  .tooltip {
+    display: none;
+  }
+}
